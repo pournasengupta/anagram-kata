@@ -1,7 +1,8 @@
+//Anagram Generation from online
+
 public class Anagram { 
-    public static void main(String[] args) 
+    public static void main(String[] args, String str) 
     {
-        String str = "SKR"; 
         System.out.println("String is:-"+str);
         System.out.println("Anagram of the given string is:-");
         int size = str.length(); 
