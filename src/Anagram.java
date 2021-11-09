@@ -1,7 +1,7 @@
 //Anagram Generation from online
 
 public class Anagram { 
-    public static void main(String[] args, String str) 
+    public static void Finder(String[] args, String str) 
     {
         System.out.println("String is:-"+str);
         System.out.println("Anagram of the given string is:-");

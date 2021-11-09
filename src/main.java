@@ -1,7 +1,7 @@
 import static java.nio.file.Files.lines;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
-
+import java.io.*;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
@@ -25,6 +25,23 @@ public class main {
 				.filter(line -> !line.isEmpty())
 				.collect(toList()));
 	}
+
+	public static void Anagram(String[] args) {
+		List<List<String>> records = new ArrayList<>();
+			try (BufferedReader br = new BufferedReader(new FileReader("wordlist.txt"))){
+				String line;
+				while ((line = br.readLine()) != null)) {
+					String[] values = line.split(COMMA_DELIMITER); // Am I supposed to inititalize this somewhere or should this be replaced
+					records.add(Arrays.asList(values)); // Array?
+				}
+			} 
+		int size = arrayList.size(); // Records[i].size()?
+		for (int i = 0; i < size; i++) {
+			Anagram.Finder(String[] args, ArrayList[i]); //should this be records[i]?
+		}
+	}
+
+    //added the method above
 
 	public List<String> of(String input) {
 		if (input == null || input.trim().isEmpty())
