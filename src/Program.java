@@ -9,7 +9,7 @@ public class Program {
 		Scanner scanner = new Scanner(System.in);
 		String word = scanner.nextLine();
 		Anagram anagramsFinder = new Anagram();
-        List<String> anagrams = Anagram(word);     
+        List<String> anagrams = Anagram(records);
         // Error is line above. Tried replacing AnagramsFinder(word) with Anagram(word)
         System.out.println(String.join(", ", anagrams));
         System.in.read();

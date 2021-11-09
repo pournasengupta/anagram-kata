@@ -31,13 +31,19 @@ public class main {
 			try (BufferedReader br = new BufferedReader(new FileReader("wordlist.txt"))){
 				String line;
 				while ((line = br.readLine()) != null)) {
-					String[] values = line.split(COMMA_DELIMITER); // Am I supposed to inititalize this somewhere or should this be replaced
+					// RESOLVED: replace COMMA_DELIMITER inside .split with " " for space delimiter
+					String[] values = line.split(" "); // Am I supposed to inititalize this somewhere or should this be replaced
+					// Each split is appended into the records ArrayList created in line 30
 					records.add(Arrays.asList(values)); // Array?
 				}
-			} 
-		int size = arrayList.size(); // Records[i].size()?
+			}
+		// RESOLVED: Replaces arrayList with records
+		int size = records.size(); // Records[i].size()?
 		for (int i = 0; i < size; i++) {
-			Anagram.Finder(String[] args, ArrayList[i]); //should this be records[i]?
+			//Replaced ArrayList with records
+			// Still throwing error!!!!
+			Anagram.Finder(String[] args, records[i]);
+			//should this be records[i]?
 		}
 	}
 
