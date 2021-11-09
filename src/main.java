@@ -32,9 +32,9 @@ public class main {
 				String line;
 				while ((line = br.readLine()) != null)) {
 					// RESOLVED: replace COMMA_DELIMITER inside .split with " " for space delimiter
-					String[] values = line.split(" "); // Am I supposed to inititalize this somewhere or should this be replaced
+					String[] values = line.split(" ");
 					// Each split is appended into the records ArrayList created in line 30
-					records.add(Arrays.asList(values)); // Array?
+					records.add(records.asList(values)); // changed arrays.aslist to records.aslist
 				}
 			}
 		// RESOLVED: Replaces arrayList with records
